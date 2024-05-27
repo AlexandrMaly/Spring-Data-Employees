@@ -1,0 +1,65 @@
+1) Отримання всіх даних
+
+GET
+http://localhost:8080/api/v1/employees
+
+
+2) Створення даних
+
+POST
+http://localhost:8080/api/v1/employees
+
+{
+	"firstName": "Alice",
+	"lastName": "Green",
+	"position": "povar",
+	"phone": "068 258 39 15"
+}
+
+{
+	"firstName": "Alex",
+	"lastName": "Black",
+	"position": "Shef",
+	"phone": "061 223 39 15"
+}
+
+{
+	"firstName": "Vova",
+	"lastName": "Oksamit",
+	"position": "administrator",
+	"phone": "068 258 32 12"
+}
+
+
+3) Отримання даних за id
+
+GET
+http://localhost:8080/api/v1/employees/2
+
+
+4) REST-запит на оновлення даних за id
+
+PUT
+http://localhost:8080/api/v1/employees/3
+
+{
+	"lastName": "Gray",
+	"position": "povar"
+}
+
+
+5) Отримання даних за firstName
+
+GET
+http://localhost:8080/api/v1/employees/first-name/Alice
+
+6) Отримання даних за lastName
+
+GET
+http://localhost:8080/api/v1/employees/last-name/Gray
+
+7) Видалення даних за id
+
+DELETE
+http://localhost:8080/api/v1/employees/4
+
